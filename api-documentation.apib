@@ -1,0 +1,48 @@
+FORMAT: 1A
+HOST: http://slackgit.bayn.es/
+
+# SlackGit
+
+Slack application for managing GitHub issues from Slack
+
+## Issue Collection [/issue]
+
+### Create a New Issue [POST]
+
+Create a new issue in a particular GitHub repository.
+
++ Request (application/x-www-form-urlencoded)
+
+    + Headers
+    
+            Accept: applicaiton/json
+            
+    + Body
+
+            token=gIkuvaNzQIHg97ATvDxqgjtO
+            team_id=T0001
+            team_domain=example
+            channel_id=C2147483705
+            channel_name=test
+            user_id=U2147483697
+            user_name=Steve
+            command=/slackgit
+            text={repository_name} {issue_title}
+            response_url=https://hooks.slack.com/commands/1234/5678
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: https://github.com/{username}/{repository_name/issues/{issue_id}
+
+    + Body
+
+            {
+                "text": "Issue created",
+                "attachments": [
+                    {
+                        "text":"New GitHub issue #{issue_id} has been created."
+                    }
+                ]
+            }
