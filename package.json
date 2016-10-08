@@ -1,0 +1,19 @@
+{
+  "name": "slackgit",
+  "version": "0.0.1",
+  "description": "Slack Command API to allow users to manage GitHub Issues",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baynezy/SlackGit.git"
+  },
+  "author": "Simon Baynes",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/baynezy/SlackGit/issues"
+  },
+  "homepage": "https://github.com/baynezy/SlackGit#readme"
+}
