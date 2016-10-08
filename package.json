@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/baynezy/SlackGit/issues"
   },
-  "homepage": "https://github.com/baynezy/SlackGit#readme"
+  "homepage": "https://github.com/baynezy/SlackGit#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.6"
+  }
 }
